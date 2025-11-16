@@ -1,0 +1,30 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  justify-content: center;
+}
+
+.navLinks {
+  display: flex;
+  gap: 1rem; 
+  
+}
+
+.navButton {
+  
+  color: var(--black-font); 
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.navButton:hover {
+  background-color: #555; 
+}
