@@ -1,0 +1,50 @@
+# Nama workflow-mu
+name: Deploy React App to GitHub Pages
+
+# Kapan workflow ini berjalan: setiap kali ada push ke branch 'main'
+on:
+  push:
+    branches: [ "main" ]
+
+# Izin yang dibutuhkan 'robot' untuk menulis ke branch 'gh-pages'
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      # 1. Mengambil kodemu dari repo
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # 2. Menyiapkan Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18 # Gunakan versi Node yang kamu pakai
+
+      # 3. Install semua dependencies
+      - name: Install dependencies
+        run: npm install
+
+      # 4. Build proyekmu (Vite akan membaca 'base' dari config)
+      - name: Build project
+        run: npm run build
+
+      # 5. Menyiapkan Halaman GitHub Pages
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      # 6. Mengunggah hasil build (folder 'dist')
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: './dist' # Folder output build Vite
+
+      # 7. Deploy ke GitHub Pages
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
