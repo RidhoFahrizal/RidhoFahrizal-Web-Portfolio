@@ -10,6 +10,13 @@ export default defineConfig({
   },
   preview: {
     host: '0.0.0.0',
-    allowedHosts: ['sea-turtle-app-pbb5x.ondigitalocean.app']
+    allowedHosts: [
+      'sea-turtle-app-pbb5x.ondigitalocean.app',
+      'ridhofahrizal.life',
+      'www.ridhofahrizal.life',
+    ]
   }
 })
+
+
+
