@@ -8,7 +8,9 @@ function Profile() {
       <div className={styles['page-container']}>
         <div className={styles["text-container"]}>
 
-          <h1 className={styles['profile-name']}>
+          <h1 className={`
+              ${styles['profile-name']}
+            `}>
             RIDHO FAHRIZAL
             <p className={styles['profile-description']}>
               I’m a Informatics Engineering student with a strong drive to solve real problems
@@ -17,7 +19,7 @@ function Profile() {
               I’m constantly learning, building,
               and refining my skills to create software that actually makes a difference.
             </p>
-            <div className={`${styles['social-media-icons']} `}>
+            <div className={`${styles['social-media-icons']} pt-3`}>
               <a href="https://www.facebook.com/ridho.fharizal/" target="_blank"><i className='bx bxl-facebook'></i></a>
               <a href="https://www.tiktok.com/@ridhofahrizal" target="_blank"><i className='bx bxl-tiktok'></i></a>
               <a href="https://www.instagram.com/ridho.fahrizal1/" target="_blank"><i className='bx bxl-instagram-alt'></i></a>
