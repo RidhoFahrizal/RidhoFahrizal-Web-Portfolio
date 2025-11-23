@@ -17,7 +17,7 @@ function Profile() {
               I’m constantly learning, building,
               and refining my skills to create software that actually makes a difference.
             </p>
-            <div className={styles['social-media-icons']}>
+            <div className={`${styles['social-media-icons']} `}>
               <a href="https://www.facebook.com/ridho.fharizal/" target="_blank"><i className='bx bxl-facebook'></i></a>
               <a href="https://www.tiktok.com/@ridhofahrizal" target="_blank"><i className='bx bxl-tiktok'></i></a>
               <a href="https://www.instagram.com/ridho.fahrizal1/" target="_blank"><i className='bx bxl-instagram-alt'></i></a>
