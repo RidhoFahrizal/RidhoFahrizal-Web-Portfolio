@@ -1,19 +1,22 @@
 import  ProjectCard  from '../../entities/Project/ui/PortfolioCard';
 import type IProject  from '../../entities/Project/model/types';
 import LogoKalem from '../../feature/profile/assets/adaptive_logo_kalem_2.png'
+import ScannoProjectImge from '../../feature/profile/assets/scanno-project.png'
 
 const projects: IProject[] = [
     {
         id: 1,
         title: "Kalem App",
-        description: "Aplikasi meditasi berbasis React dan TypeScript.",
-        imageUrl: LogoKalem
+        description: "Aplikasi Website meditasi yang membantu pengguna untuk relaksasi dan fokus, tersedia di play store dan web. ",
+        imageUrl: LogoKalem,
+        projectUrl: "https://kalem.studio"
     },
     {
         id: 2,
-        title: "SpaceX Explorer",
-        description: "Web untuk melacak peluncuran roket menggunakan SpaceX API.",
-        imageUrl: "/assets/spacex.png"
+        title: "Scanno",
+        description: "Aplikasi scan catatan yang memungkinkan pengguna untuk memindai catatan tulis menjadi digital mengguankan teknologi OCR ",
+        imageUrl: ScannoProjectImge,
+        projectUrl: "https://github.com/RidhoFahrizal/scanno-be-laravel.git"
     }
 ];
 
@@ -29,14 +32,16 @@ export const ProjectList = () => {
                 <ProjectCard
                     key={proj.id}
                     project={proj}
-                    className='border-2 border-black-50'
+                    className='border-0.5 border-gray-100 shadow-sm'
                     actionSlot={
-                        <button className="bg-blue-500 text-white px-3 py-1 rounded text-sm">
-                            Lihat Detail
+                        
+                        <button className="cursor-pointer bg-blue-500 text-white px-3 py-1 rounded text-sm">
+                            Lihat Project 
                         </button>
                     }
 
-                    onClick={() => console.log("Pindah ke detail", proj.id)}
+                    onClick={() => window.open(proj.projectUrl, '_blank')}
+
                 />
             ))}
         </div>

@@ -20,8 +20,8 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
         <div
             onClick={onClick}
             className={`
-        max-w-sm rounded overflow-hidden shadow-lg bg-white 
-        transition-transform hover:scale-105 cursor-pointer
+        max-w-sm rounded overflow-hidden  
+        transition-transform 
         flex flex-col h-full
         ${className} 
       `}
@@ -36,14 +36,14 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
                 />
             </div>
 
-            <div className="px-6 py-4 flex-grow">
+            <div className=" py-4 flex-grow">
                 {/* Judul Dinamis (Bukan Hardcoded) */}
-                <div className="font-bold text-xl mb-2 text-gray-900">
+                <div className="pl-4 pr-4 font-bold text-xl mb-2 text-gray-900">
                     {title}
                 </div>
 
                 {/* Deskripsi Dinamis */}
-                <p className="text-gray-700 text-base line-clamp-3">
+                <p className= "pl-4 pr-4 text-gray-700 text-base line-clamp-3">
                     {description}
                 </p>
             </div>
@@ -53,7 +53,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({
           kita bisa memasukkannya lewat sini TANPA mengedit file ini.
       */}
             {actionSlot && (
-                <div className="px-6 pt-2 pb-4">
+                <div className="p-4 pt-2 pb-4">
                     {actionSlot}
                 </div>
             )}

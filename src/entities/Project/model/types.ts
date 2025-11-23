@@ -10,7 +10,8 @@ export default interface IProject {
   title: string;
   description: string;
   imageUrl: string;
-  // Opsional: link, tags, date, dll bisa ditambahkan nanti (Extension)
   tags?: string[]; 
+  projectUrl?: string;
+  githubUrl?: string;
 }
 
