@@ -39,9 +39,7 @@ export const ProjectList = () => {
                             Lihat Project 
                         </button>
                     }
-
                     onClick={() => window.open(proj.projectUrl, '_blank')}
-
                 />
             ))}
         </div>
