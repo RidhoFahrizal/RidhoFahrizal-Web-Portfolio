@@ -3,6 +3,7 @@ import Navbar from './widgets/navbar/Navbar';
 import Profile from './pages/ProfilePage/ProfilePage';
 import PortofolioPage from './pages/PortofolioPage/PortofolioPage';
 
+
 function App() {
   return (
     <BrowserRouter>

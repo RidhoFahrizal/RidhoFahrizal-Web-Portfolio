@@ -13,7 +13,7 @@ function Profile() {
             `}>
             RIDHO FAHRIZAL
             <p className={styles['profile-description']}>
-              I’m a Informatics Engineering student with a strong drive to solve real problems
+              I’m an Informatics Engineering student with a strong drive to solve real problems
               through software. I enjoy turning complex challenges into clear, practical
               solutions—whetherthrough clean backend architecture, efficient data processing, or thoughtful product design.
               I’m constantly learning, building,
