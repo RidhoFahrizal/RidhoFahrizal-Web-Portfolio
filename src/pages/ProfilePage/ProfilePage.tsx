@@ -21,7 +21,7 @@ function Profile() {
             </p>
             <div className={`${styles['social-media-icons']} pt-3`}>
               <a href="https://www.facebook.com/ridho.fharizal/" target="_blank"><i className='bx bxl-facebook'></i></a>
-              <a href="https://www.tiktok.com/@ridhofahrizal" target="_blank"><i className='bx bxl-tiktok'></i></a>
+              <a href="mailto:farizalridho@gmail.com" target="_blank"><i className='bx bxl-gmail'></i></a>
               <a href="https://www.instagram.com/ridho.fahrizal1/" target="_blank"><i className='bx bxl-instagram-alt'></i></a>
               <a href="https://www.linkedin.com/in/ridho-fahrizal-95a060244/" target="_blank"><i className='bx bxl-linkedin'></i></a>
             </div>
